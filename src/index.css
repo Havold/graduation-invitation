@@ -86,7 +86,6 @@ button:hover {
 section {
   height: 100vh;
   scroll-snap-align: center;
-  padding: 32px 64px;
 }
 
 section:nth-child(even) {

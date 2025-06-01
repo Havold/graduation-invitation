@@ -1,7 +1,5 @@
 import React from "react";
-import "./home.css";
-
-const options = ["Home", "Count Down", "Location", "Ending"];
+import "./home.scss";
 
 const Home = () => {
   return (

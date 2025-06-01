@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-import "./location.css";
+import "./location.scss";
 
 const Location = () => {
   return (
