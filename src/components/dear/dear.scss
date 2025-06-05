@@ -1,0 +1,30 @@
+.dear {
+  color: white;
+  height: 100%;
+
+  .letterContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 120px;
+
+    .letter {
+      p {
+        font-size: 24px;
+        font-weight: 200;
+        text-align: justify;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .signature {
+      font-family: "Betray", sans-serif;
+      font-size: 32px;
+      align-self: flex-end;
+      letter-spacing: 2px;
+    }
+  }
+}

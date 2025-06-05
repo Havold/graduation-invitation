@@ -1,19 +1,25 @@
-import React from "react";
-
+import React, { useState } from "react";
 import "./card.scss";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // đừng quên import CSS
 
 const Card = ({ title, desc, img, link }) => {
+  const [showTippy, setShowTippy] = useState(false);
+
   const handleCopy = () => {
     navigator.clipboard
       .writeText("0833873869")
       .then(() => {
-        alert("Đã sao chép số điện thoại: 0833873869");
+        setShowTippy(true);
+        setTimeout(() => {
+          setShowTippy(false);
+        }, 2000); // hiển thị tooltip trong 2s
       })
       .catch((err) => {
-        alert("Lỗi khi sao chép!");
         console.error("Copy failed: ", err);
       });
   };
+
   return (
     <div className="card">
       <span className="title">{title}</span>
@@ -24,7 +30,9 @@ const Card = ({ title, desc, img, link }) => {
           GO TO MY FACEBOOK
         </a>
       ) : (
-        <button onClick={handleCopy}>COPY NUMBER</button>
+        <Tippy content="Copied phone number!" visible={showTippy}>
+          <button onClick={handleCopy}>COPY NUMBER</button>
+        </Tippy>
       )}
     </div>
   );
