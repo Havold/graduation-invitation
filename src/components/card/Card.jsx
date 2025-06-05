@@ -24,7 +24,7 @@ const Card = ({ title, desc, img, link, variant }) => {
   return (
     <motion.div className="card">
       <span className="title">{title}</span>
-      <img src={img} alt="card" />
+      <img className="cardImg" src={img} alt="card" />
       <span className="desc">{desc}</span>
       {link ? (
         <a href={link} target="_blank" rel="noopener noreferrer">

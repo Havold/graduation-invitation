@@ -39,3 +39,49 @@ img {
   height: 80%;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .location {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 64px;
+    gap: 8px;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+  }
+
+  .address {
+    font-size: 12px;
+  }
+
+  .btn {
+    background: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    width: fit-content;
+    align-self: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+  .uniImg {
+    width: 320px !important;
+    height: 80% !important;
+    object-fit: cover;
+  }
+}

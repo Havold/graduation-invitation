@@ -28,3 +28,114 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .desc {
+      text-align: center;
+      font-size: 8px;
+    }
+
+    .cardImg {
+      width: 120px !important;
+      height: 120px !important;
+      align-self: center;
+    }
+
+    a {
+      font-size: 8px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 8px 16px;
+    }
+
+    button {
+      font-size: 8px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .desc {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .cardImg {
+      width: 200px !important;
+      height: 200px !important;
+      align-self: center;
+    }
+
+    a {
+      font-size: 12px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 8px 16px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+@media (min-height: 1024px) and (max-height: 1367px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    .desc {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .cardImg {
+      width: 320px !important;
+      height: 420px !important;
+      align-self: center;
+    }
+
+    a {
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 8px 16px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+}

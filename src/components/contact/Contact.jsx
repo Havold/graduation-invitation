@@ -69,7 +69,7 @@ const Contact = () => {
           title="Phone"
           img="/assets/images/phone-2.jpg"
         />
-        <span>OR</span>
+        <span className="or">OR</span>
         <Card
           desc="Contact me via Facebook"
           title="Facebook"

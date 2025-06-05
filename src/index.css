@@ -56,7 +56,8 @@ button:hover {
 }
 
 .container {
-  max-width: 1536px;
+  /* max-width: 1536px; */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

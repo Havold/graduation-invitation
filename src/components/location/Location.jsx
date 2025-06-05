@@ -100,6 +100,7 @@ const Location = () => {
           INFORMATION TECHNOLOGY
         </motion.span>
         <motion.img
+          className="uniImg"
           variants={imageVariant}
           animate={isInView ? "animate" : "initial"}
           src="/assets/images/UIT-2.jpg"

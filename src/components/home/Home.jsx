@@ -50,13 +50,6 @@ const Home = () => {
   const isInView = useInView(ref, { margin: "-200px" });
   return (
     <div ref={ref} className="home">
-      {isInView ? (
-        <h1 className="date">
-          08 . 06 . 2025 <br /> <span className="time">11h - 13h</span>
-        </h1>
-      ) : (
-        <></>
-      )}
       {/* TOP */}
       <div className="top">
         {/* CENTER */}
@@ -68,6 +61,13 @@ const Home = () => {
           Graduation Ceremony
         </motion.span>
       </div>
+      {isInView ? (
+        <h1 className="date">
+          08 . 06 . 2025 <br /> <span className="time">11h - 13h</span>
+        </h1>
+      ) : (
+        <></>
+      )}
       {/* CENTER */}
       <motion.div
         variants={imageVariant}
@@ -77,7 +77,7 @@ const Home = () => {
         <motion.img
           variants={imageVariant}
           className="img_sub"
-          src="https://i.pinimg.com/736x/e9/8f/17/e98f1782dca3abeef419e29b59d1aa77.jpg"
+          src="/assets/images/MHX2022.jpg"
           alt="image_1"
         />
         <motion.img
@@ -89,7 +89,7 @@ const Home = () => {
         <motion.img
           variants={imageVariant}
           className="img_sub"
-          src="https://i.pinimg.com/736x/b4/92/90/b4929080376e3cd65c47a8241a226a1b.jpg"
+          src="/assets/images/MHX2024.jpg"
           alt="image_3"
         />
       </motion.div>

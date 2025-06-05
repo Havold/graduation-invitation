@@ -34,3 +34,31 @@
     font-family: "Betray", sans-serif;
   }
 }
+
+@media (max-width: 768px) {
+  .ending {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../../public/assets/images/UIT.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: blur(5px) grayscale(100%);
+      opacity: 0.5;
+      z-index: -1; // đẩy nền ra sau
+    }
+
+    .title {
+      font-size: 40px;
+    }
+
+    .subTitle {
+      font-size: 20px;
+      font-family: "Betray", sans-serif;
+    }
+  }
+}
