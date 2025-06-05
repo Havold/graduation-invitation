@@ -1,4 +1,5 @@
 import "./App.scss";
+import Contact from "./components/contact/Contact";
 import CountDown from "./components/countDown/CountDown";
 import Ending from "./components/ending/Ending";
 import Home from "./components/home/Home";
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section id="countDown">
         <CountDown />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
       <section id="ending">
         <Ending />

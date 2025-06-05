@@ -43,6 +43,20 @@
   font-weight: 300;
   width: 100%;
   text-align: center;
+  line-height: 80px;
+}
+
+.time {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-family: "Betray", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  width: 100%;
+  letter-spacing: 12px;
+  text-align: center;
 }
 
 .bottom {

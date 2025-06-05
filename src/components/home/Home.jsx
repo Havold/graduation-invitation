@@ -11,7 +11,9 @@ const Home = () => {
       </div>
       {/* CENTER */}
       <div className="center">
-        <h1 className="date">08 . 06 . 2025</h1>
+        <h1 className="date">
+          08 . 06 . 2025 <br /> <span className="time">11h - 13h</span>
+        </h1>
         <img
           className="img_sub"
           src="https://i.pinimg.com/736x/e9/8f/17/e98f1782dca3abeef419e29b59d1aa77.jpg"
