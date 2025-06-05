@@ -12,6 +12,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,11 +26,14 @@ a {
   text-decoration: none;
   border: none;
   color: black;
+  transition: 0.5s all ease;
+
 }
 
 a:hover {
   opacity: 0.6;
   transition: 0.5s all ease;
+  scale: 0.95;
 }
 
 button {
@@ -40,11 +44,15 @@ button {
   font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   cursor: pointer;
+  scale: 1;
+  transition: 0.5s all ease;
+  
 }
 
 button:hover {
   opacity: 0.6;
   transition: 0.5s all ease;
+  scale: 0.95;
 }
 
 .container {

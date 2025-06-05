@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./card.scss";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // đừng quên import CSS
+import { easeIn, easeInOut, motion, scale, useInView } from "motion/react";
 
-const Card = ({ title, desc, img, link }) => {
+const Card = ({ title, desc, img, link, variant }) => {
   const [showTippy, setShowTippy] = useState(false);
 
   const handleCopy = () => {
@@ -21,7 +22,7 @@ const Card = ({ title, desc, img, link }) => {
   };
 
   return (
-    <div className="card">
+    <motion.div className="card">
       <span className="title">{title}</span>
       <img src={img} alt="card" />
       <span className="desc">{desc}</span>
@@ -34,7 +35,7 @@ const Card = ({ title, desc, img, link }) => {
           <button onClick={handleCopy}>COPY NUMBER</button>
         </Tippy>
       )}
-    </div>
+    </motion.div>
   );
 };
 

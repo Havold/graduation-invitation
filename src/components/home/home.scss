@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 32px 64px;
+  position: relative;
 }
 
 .top {
@@ -36,7 +37,7 @@
 .date {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 100;
   font-family: "Betray", sans-serif;
   font-size: 120px;
@@ -44,6 +45,19 @@
   width: 100%;
   text-align: center;
   line-height: 80px;
+  top: 50%;
+  animation: expandText 1s ease-in-out forwards;
+}
+
+@keyframes expandText {
+  from {
+    letter-spacing: -4px;
+    opacity: 0;
+  }
+  to {
+    letter-spacing: 4px;
+    opacity: 1;
+  }
 }
 
 .time {
