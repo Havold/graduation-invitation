@@ -64,14 +64,14 @@ const CountDown = () => {
     <div ref={ref} className="countdownContainer">
       <span className="title">LET THE COUNTDOWN BEGIN</span>
 
-      {isTimeUp ? (
+      {isTimeUp || !timeLeft ? (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 4 }}
           className="celebrationMessage"
         >
-          🎉 It's time to celebrate! 🎓
+          It's time to celebrate!
         </motion.div>
       ) : (
         <motion.div
